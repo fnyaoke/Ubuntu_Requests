@@ -11,7 +11,7 @@ def main():
 
     # Validate URL
     if not url.lower().startswith(("http://", "https://")):
-        print("⚠️ Invalid URL. Please provide a valid http(s) link.")
+        print("Invalid URL. Please provide a valid http(s) link.")
         return
 
     try:
@@ -36,12 +36,12 @@ def main():
         # Success message
         print(f"✓ Successfully fetched: {filename}")
         print(f"✓ Image saved to {file_path}\n")
-        print("Connection strengthened. Community enriched. 🌍🤝")
+        print("Connection strengthened. Community enriched.")
 
     except requests.exceptions.RequestException as e:
-        print(f"⚠️ Failed to fetch image: {e}")
+        print(f"Failed to fetch image: {e}")
     except Exception as e:
-        print(f"⚠️ An unexpected error occurred: {e}")
+        print(f"An unexpected error occurred: {e}")
 
 
 if __name__ == "__main__":
